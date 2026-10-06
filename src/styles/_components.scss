@@ -1,0 +1,27 @@
+[data-module="dashboard"],
+[data-module="maintenance"],
+[data-module="reports"] {
+  --module-accent: var(--module-monitoring);
+  --module-tint: var(--module-monitoring-subtle);
+}
+[data-module="tasks"] {
+  --module-accent: var(--module-tasks);
+  --module-tint: var(--brand-subtle);
+}
+[data-module="tourists"],
+[data-module="well-monitoring"] {
+  --module-accent: var(--module-ocean);
+  --module-tint: var(--module-ocean-subtle);
+}
+[data-module="species"] {
+  --module-accent: var(--module-nature);
+  --module-tint: var(--module-nature-subtle);
+}
+[data-module="heritage"] {
+  --module-accent: var(--module-heritage);
+  --module-tint: var(--module-heritage-subtle);
+}
+[data-module="profile"] {
+  --module-accent: var(--module-technology);
+  --module-tint: var(--module-technology-subtle);
+}

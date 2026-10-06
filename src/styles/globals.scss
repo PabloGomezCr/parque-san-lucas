@@ -1,0 +1,21 @@
+@use "./tokens";
+@use "./reset";
+@use "./typography";
+@use "./layout";
+@use "./responsive";
+@use "./components";
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+#root {
+  min-height: 100vh;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

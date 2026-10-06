@@ -1,0 +1,44 @@
+# Archivos de aplicación modificados en la actualización de branding
+
+- `src/App.css` (eliminado: starter sin uso)
+- `src/assets/hero.png` (eliminado: starter sin uso)
+- `src/assets/react.svg` (eliminado: starter sin uso)
+- `src/assets/vite.svg` (eliminado: starter sin uso)
+- `src/components/branding/BrandLogo.jsx`
+- `src/components/branding/BrandLogo.scss`
+- `src/components/common/StatusBadge.jsx`
+- `src/components/common/common.scss`
+- `src/components/dashboard/StatCard.jsx`
+- `src/components/dashboard/SummaryChart.jsx`
+- `src/components/feedback/ConnectivityStatus.jsx`
+- `src/components/feedback/EmptyState.jsx`
+- `src/components/feedback/ErrorState.jsx`
+- `src/components/feedback/NoResultsState.jsx`
+- `src/components/feedback/SuccessState.jsx`
+- `src/components/feedback/feedback.scss`
+- `src/components/forms/EvidenceInput.jsx`
+- `src/components/forms/forms.scss`
+- `src/components/layout/AppLayout.jsx`
+- `src/components/layout/Navbar.jsx`
+- `src/components/layout/Sidebar.jsx`
+- `src/components/layout/SystemLayout.jsx`
+- `src/components/layout/layout.scss`
+- `src/components/records/RecordForm.jsx`
+- `src/components/well/WellChart.jsx`
+- `src/config/chartColors.js`
+- `src/index.css` (eliminado: starter sin uso)
+- `src/pages/auth/LoginPage.jsx`
+- `src/pages/auth/LoginPage.scss`
+- `src/pages/dashboard/DashboardPage.jsx`
+- `src/pages/profile/ProfilePage.scss`
+- `src/pages/reports/ReportsPage.jsx`
+- `src/pages/system/NotFoundPage.jsx`
+- `src/pages/system/UnauthorizedPage.jsx`
+- `src/styles/_components.scss`
+- `src/styles/_layout.scss`
+- `src/styles/_mixins.scss`
+- `src/styles/_reset.scss`
+- `src/styles/_tokens.scss`
+- `src/styles/globals.scss`
+
+Además: assets de branding y su README, index.html, README.md, tests/app.spec.js y documentación de auditoría/QA.

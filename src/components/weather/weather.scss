@@ -1,0 +1,22 @@
+.weather-card {
+  min-width: 0;
+  margin-block: 1rem;
+  overflow-wrap: anywhere;
+  border-inline-start: 3px solid var(--module-ocean);
+  .badge {
+    white-space: normal;
+  }
+  a {
+    color: var(--module-ocean);
+    text-decoration: underline;
+  }
+  ul {
+    padding-inline-start: 1.25rem;
+  }
+  li + li {
+    margin-block-start: 0.5rem;
+  }
+  summary {
+    cursor: pointer;
+  }
+}

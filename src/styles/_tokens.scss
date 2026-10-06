@@ -1,0 +1,129 @@
+.theme-root {
+  // Identity: immutable concept colors; use module tokens for contextual UI.
+  --brand-orange: #d05e27;
+  --color-monitoring: #111729;
+  --color-ocean: #1c2656;
+  --color-nature: #0f2b23;
+  --color-heritage: #401d09;
+  --color-technology: #1d1b48;
+  --color-white: #ffffff;
+
+  --brand-primary: var(--brand-orange);
+  --brand-primary-hover: #dc6d36;
+  --brand-primary-active: #e47843;
+  --brand-text: #a94418;
+  --brand-subtle: #fae9df;
+  --text-on-brand: var(--color-monitoring);
+  --focus-ring: var(--brand-orange);
+
+  --background: #f7f7f4;
+  --surface: var(--color-white);
+  --surface-subtle: #f1f1ec;
+  --surface-elevated: var(--color-white);
+  --surface-glass: #ffffffcc;
+  --surface-high: #e9eae5;
+  --text-primary: var(--color-monitoring);
+  --text-secondary: #4d5260;
+  --text-muted: #666b78;
+  --border: #e0e2e5;
+  --border-strong: #c9cdd2;
+
+  --module-monitoring: var(--color-monitoring);
+  --module-ocean: var(--color-ocean);
+  --module-nature: var(--color-nature);
+  --module-heritage: var(--color-heritage);
+  --module-technology: var(--color-technology);
+  --module-tasks: var(--brand-text);
+  --module-monitoring-subtle: #e9ebf0;
+  --module-ocean-subtle: #eceef7;
+  --module-nature-subtle: #e5eee9;
+  --module-heritage-subtle: #f1e8e1;
+  --module-technology-subtle: #eeedf6;
+
+  --color-success: var(--module-nature);
+  --color-warning: #834017;
+  --color-error: #a82f35;
+  --color-info: var(--module-ocean);
+  --success-bg: var(--module-nature-subtle);
+  --warning-bg: #fae9df;
+  --error-bg: #fbe8e8;
+  --info-bg: var(--module-ocean-subtle);
+
+  // Compatibility aliases keep existing component API names semantic.
+  --primary: var(--brand-primary);
+  --primary-strong: var(--brand-primary-hover);
+  --on-primary: var(--text-on-brand);
+  --secondary: var(--module-ocean);
+  --surface-alt: var(--surface-subtle);
+  --muted: var(--text-muted);
+  --success: var(--color-success);
+  --warning: var(--color-warning);
+  --error: var(--color-error);
+  --info: var(--color-info);
+
+  --shadow: 0 1px 2px #1117290a;
+  --shadow-button: 0 2px 4px #11172915;
+  --shadow-overlay: 0 16px 40px #11172929;
+  --shadow-login: 0 20px 25px -5px #11172914, 0 8px 10px -6px #11172914;
+  --overlay-backdrop: #11172988;
+  --glow-brand: #d05e2710;
+  --glow-ocean: #1c26560a;
+  --preview-light: #f7f7f4;
+  --preview-dark: #111729;
+  --preview-neutral: #c9cdd2;
+  --radius: 12px;
+  --radius-control: 8px;
+  --sidebar-width: 288px;
+  --header-height: 64px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --z-header: 25;
+  --z-sidebar: 30;
+  --z-toast: 100;
+  color-scheme: light;
+  color: var(--text-primary);
+  background: var(--background);
+  min-height: 100vh;
+}
+.theme-root[data-theme="dark"] {
+  --brand-primary: #e66a2b;
+  --brand-primary-hover: #ee7a40;
+  --brand-primary-active: #f28b57;
+  --brand-text: #f2a47e;
+  --brand-subtle: #34251f;
+  --focus-ring: var(--brand-primary);
+  --background: #0d1220;
+  --surface: #111729;
+  --surface-subtle: #171e32;
+  --surface-elevated: #1b2338;
+  --surface-glass: #111729e6;
+  --surface-high: #222c43;
+  --text-primary: #f6f7fa;
+  --text-secondary: #c3c7d1;
+  --text-muted: #a3a9b7;
+  --border: #293248;
+  --border-strong: #39445e;
+  --module-monitoring: #c3c7d1;
+  --module-ocean: #aab8f0;
+  --module-nature: #83bdac;
+  --module-heritage: #d9aa8c;
+  --module-technology: #b2afe7;
+  --module-monitoring-subtle: #222b40;
+  --module-ocean-subtle: #202a49;
+  --module-nature-subtle: #182d2b;
+  --module-heritage-subtle: #322720;
+  --module-technology-subtle: #26243e;
+  --color-warning: #f2b18b;
+  --color-error: #ffabb0;
+  --warning-bg: #34251f;
+  --error-bg: #382029;
+  --shadow: 0 1px 4px #00000033;
+  --shadow-overlay: 0 16px 48px #00000088;
+  --overlay-backdrop: #050810b3;
+  --glow-brand: #e66a2b0c;
+  --glow-ocean: #aab8f00a;
+  color-scheme: dark;
+}

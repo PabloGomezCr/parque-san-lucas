@@ -1,0 +1,540 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Sofía Arias",
+      "email": "sofia.arias@mock.gov",
+      "role": "Supervisor",
+      "department": "Parque Nacional Isla San Lucas",
+      "mock": true,
+      "password": "secret123",
+      "parkId": "1",
+      "active": true
+    },
+    {
+      "id": "master-1",
+      "name": "Administrador de Prueba",
+      "email": "master.admin@mock.gov",
+      "password": "secret123",
+      "role": "MASTER_ADMIN",
+      "department": "Parque Nacional Isla San Lucas",
+      "parkId": "1",
+      "active": true,
+      "mock": true
+    },
+    {
+      "id": "admin-1",
+      "name": "Administrador de Operaciones Mock",
+      "email": "admin@mock.gov",
+      "password": "secret123",
+      "role": "ADMIN",
+      "parkId": "1",
+      "active": true,
+      "optionalPermissions": [],
+      "department": "Parque Nacional Isla San Lucas",
+      "mock": true
+    },
+    {
+      "id": "ranger-1",
+      "name": "Guardaparque de Prueba",
+      "email": "guardaparque@mock.gov",
+      "password": "secret123",
+      "role": "PARK_RANGER",
+      "parkId": "1",
+      "active": true,
+      "optionalPermissions": [],
+      "department": "Parque Nacional Isla San Lucas",
+      "mock": true
+    }
+  ],
+  "parks": [
+    {
+      "id": "1",
+      "name": "Parque Nacional Isla San Lucas",
+      "type": "Insular",
+      "status": "operativo",
+      "region": "Por validar",
+      "country": "Costa Rica",
+      "mock": true,
+      "wellAssociation": "Por validar",
+      "timezone": "America/Costa_Rica",
+      "latitude": 9.9404316,
+      "longitude": -84.9060651,
+      "coordinatesVerified": true,
+      "coordinatesSource": "OpenStreetMap/Nominatim",
+      "coordinatesVerifiedAt": "2026-10-06T00:00:00-06:00",
+      "coordinatesReference": "https://www.openstreetmap.org/relation/11814893"
+    }
+  ],
+  "parkRoutes": [
+    {
+      "id": "route-historic",
+      "parkId": "1",
+      "name": "Sendero histórico",
+      "difficulty": "Moderada",
+      "duration": "90 min",
+      "description": "Recorrido interpretativo por referencias históricas del parque.",
+      "active": true,
+      "mock": true
+    },
+    {
+      "id": "route-coast",
+      "parkId": "1",
+      "name": "Sendero costero",
+      "difficulty": "Por validar",
+      "duration": "60 min",
+      "description": "Recorrido de observación del entorno litoral.",
+      "active": true,
+      "mock": true
+    }
+  ],
+  "tours": [],
+  "visitorGroups": [],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Inspección de sendero norte",
+      "category": "Patrimonio",
+      "status": "pending",
+      "priority": "high",
+      "assignedTo": "Diana Mora",
+      "dueDate": "2026-10-03",
+      "description": "Revisión de señalización y limpieza del sendero principal.",
+      "mock": true,
+      "image": "/assets/references/t01_tareas_vista_lista-1.webp",
+      "location": "Sector por validar",
+      "parkId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Monitoreo de fauna marina",
+      "category": "Especies",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignedTo": "Luis Solís",
+      "dueDate": "2026-10-05",
+      "description": "Registro visual de tortugas y aves de litoral.",
+      "mock": true,
+      "image": "/assets/references/t01_tareas_vista_lista-3.webp",
+      "location": "Sector por validar",
+      "parkId": "1"
+    },
+    {
+      "id": "3",
+      "title": "Verificación de pozo",
+      "category": "Infraestructura",
+      "status": "completed",
+      "priority": "low",
+      "assignedTo": "Marco Ruiz",
+      "dueDate": "2026-09-29",
+      "description": "Control de caudal y calidad del pozo de abastecimiento.",
+      "mock": true,
+      "image": "/assets/references/t01_tareas_vista_lista-2.webp",
+      "location": "Sector por validar",
+      "parkId": "1"
+    }
+  ],
+  "touristAttentions": [
+    {
+      "id": "1",
+      "touristName": "Ana García",
+      "visitType": "Turista nacional",
+      "status": "pending",
+      "origin": "San José",
+      "date": "2026-10-02",
+      "notes": "Solicita orientación sobre senderos y puntos de avistamiento.",
+      "mock": true,
+      "visitorCount": 1,
+      "responsible": "Sofía Arias",
+      "parkId": "1"
+    },
+    {
+      "id": "2",
+      "touristName": "Bruno Peters",
+      "visitType": "Turista internacional",
+      "status": "resolved",
+      "origin": "Alemania",
+      "date": "2026-10-01",
+      "notes": "Se entregó información de seguridad y rutas recomendadas.",
+      "mock": true,
+      "visitorCount": 1,
+      "responsible": "Sofía Arias",
+      "parkId": "1"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "1",
+      "title": "Reparación de baranda",
+      "category": "Infraestructura",
+      "status": "planned",
+      "priority": "medium",
+      "assignedTo": "Equipo de mantenimiento",
+      "date": "2026-10-04",
+      "location": "Mirador oeste",
+      "mock": true,
+      "image": "/assets/references/reparaciones_y_mantenimiento_parque_nacional_isla_san_lucas-1.webp",
+      "description": "Registro de demostración para seguimiento de infraestructura y servicios del parque.",
+      "parkId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Cambio de lámpara",
+      "category": "Electricidad",
+      "status": "in_progress",
+      "priority": "high",
+      "assignedTo": "Esteban Cáceres",
+      "date": "2026-10-02",
+      "location": "Centro de visitantes",
+      "mock": true,
+      "image": "/assets/references/reparaciones_y_mantenimiento_parque_nacional_isla_san_lucas-2.webp",
+      "description": "Registro de demostración para seguimiento de infraestructura y servicios del parque.",
+      "parkId": "1"
+    }
+  ],
+  "heritageInterventions": [
+    {
+      "id": "1",
+      "site": "Cueva de la sombra",
+      "interventionType": "Limpieza",
+      "status": "pending",
+      "date": "2026-10-03",
+      "responsible": "Equipo de patrimonio",
+      "notes": "POR VALIDAR: intervención de limpieza superficial.",
+      "mock": true,
+      "image": "/assets/references/p01_intervenciones_de_patrimonio_cultural-0.webp",
+      "parkId": "1"
+    },
+    {
+      "id": "2",
+      "site": "Sendero de la costa",
+      "interventionType": "Conservación",
+      "status": "approved",
+      "date": "2026-09-28",
+      "responsible": "María López",
+      "notes": "Intervención autorizada y revisada por la coordinación.",
+      "mock": true,
+      "image": "/assets/references/p01_intervenciones_de_patrimonio_cultural-1.webp",
+      "parkId": "1"
+    },
+    {
+      "id": "demo-pa-1",
+      "site": "Pabellón Histórico III",
+      "interventionType": "Consolidación estructural",
+      "status": "in_progress",
+      "date": "2026-10-01",
+      "responsible": "Equipo de patrimonio (mock)",
+      "notes": "Referencia de demostración de Stitch. Intervención y autorización por validar.",
+      "image": "/assets/references/p01_intervenciones_de_patrimonio_cultural-2.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-pa-2",
+      "site": "Antiguo Dispensario Médico",
+      "interventionType": "Mantenimiento de techumbre",
+      "status": "pending",
+      "date": "2026-10-01",
+      "responsible": "Equipo de patrimonio (mock)",
+      "notes": "Referencia de demostración de Stitch. Intervención y autorización por validar.",
+      "image": "/assets/references/p01_intervenciones_de_patrimonio_cultural-3.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-pa-3",
+      "site": "Muralla Perimetral Sur",
+      "interventionType": "Conservación",
+      "status": "in_progress",
+      "date": "2026-10-01",
+      "responsible": "Equipo de patrimonio (mock)",
+      "notes": "Referencia de demostración de Stitch. Intervención y autorización por validar.",
+      "image": "/assets/references/p01_intervenciones_de_patrimonio_cultural-4.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-pa-4",
+      "site": "Comandancia General",
+      "interventionType": "Limpieza",
+      "status": "completed",
+      "date": "2026-10-01",
+      "responsible": "Equipo de patrimonio (mock)",
+      "notes": "Referencia de demostración de Stitch. Intervención y autorización por validar.",
+      "image": "/assets/references/p01_intervenciones_de_patrimonio_cultural-5.webp",
+      "mock": true,
+      "parkId": "1"
+    }
+  ],
+  "species": [
+    {
+      "id": "1",
+      "commonName": "Tortuga de las llanuras",
+      "scientificName": "Chelonia mydas",
+      "status": "observed",
+      "category": "Marino",
+      "riskLevel": "medium",
+      "lastSeen": "2026-10-01",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "2",
+      "commonName": "Pelícano pardo",
+      "scientificName": "Pelecanus occidentalis",
+      "status": "monitoring",
+      "category": "Aves",
+      "riskLevel": "low",
+      "lastSeen": "2026-10-02",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-sp-1",
+      "commonName": "Mono Congo",
+      "scientificName": "Alouatta palliata",
+      "category": "Fauna",
+      "status": "monitoring",
+      "riskLevel": "medium",
+      "lastSeen": "2026-10-01",
+      "description": "Ficha mock basada en la referencia visual. Taxonomía y presencia local por validar.",
+      "image": "/assets/references/e01_inventario_de_especies-1.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-sp-2",
+      "commonName": "Guayacán Real",
+      "scientificName": "Guaiacum sanctum",
+      "category": "Flora",
+      "status": "monitoring",
+      "riskLevel": "medium",
+      "lastSeen": "2026-10-01",
+      "description": "Ficha mock basada en la referencia visual. Taxonomía y presencia local por validar.",
+      "image": "/assets/references/e01_inventario_de_especies-2.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-sp-3",
+      "commonName": "Halcón Peregrino",
+      "scientificName": "Falco peregrinus",
+      "category": "Aves",
+      "status": "monitoring",
+      "riskLevel": "medium",
+      "lastSeen": "2026-10-01",
+      "description": "Ficha mock basada en la referencia visual. Taxonomía y presencia local por validar.",
+      "image": "/assets/references/e01_inventario_de_especies-3.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "demo-sp-4",
+      "commonName": "Garrobo Negro",
+      "scientificName": "Ctenosaura similis",
+      "category": "Fauna",
+      "status": "monitoring",
+      "riskLevel": "medium",
+      "lastSeen": "2026-10-01",
+      "description": "Ficha mock basada en la referencia visual. Taxonomía y presencia local por validar.",
+      "image": "/assets/references/e01_inventario_de_especies-4.webp",
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "commonName": "Pelicano",
+      "scientificName": "Pelicalus",
+      "status": "observed",
+      "category": "Aves",
+      "riskLevel": "medium",
+      "lastSeen": "2026-09-02",
+      "location": "Mirador oeste",
+      "description": "Tiene pico naranja",
+      "family": "Pelicalus",
+      "mock": true,
+      "updatedAt": "2026-10-02T19:34:34.877Z",
+      "createdAt": "2026-10-02T19:34:34.878Z",
+      "id": "b-VDr-trKe4",
+      "parkId": "1"
+    }
+  ],
+  "speciesObservations": [
+    {
+      "id": "1",
+      "speciesId": "1",
+      "observer": "Diana Mora",
+      "date": "2026-10-01",
+      "comment": "Nido localizado cerca de la zona de anidación.",
+      "mock": true,
+      "parkId": "1"
+    }
+  ],
+  "wellReadings": [
+    {
+      "id": "1",
+      "date": "2026-10-01",
+      "level": 5.2,
+      "temperature": 24.8,
+      "ph": 7.3,
+      "status": "stable",
+      "flow": 11.6,
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "2",
+      "date": "2026-09-28",
+      "level": 4.8,
+      "temperature": 25.2,
+      "ph": 7.4,
+      "status": "warning",
+      "flow": 10.9,
+      "mock": true,
+      "parkId": "1"
+    },
+    {
+      "id": "3",
+      "date": "2026-09-25",
+      "level": 5,
+      "temperature": 24.9,
+      "ph": 7.5,
+      "status": "stable",
+      "flow": 11.1,
+      "mock": true,
+      "parkId": "1"
+    }
+  ],
+  "chatMessages": [
+    {
+      "kind": "group",
+      "channelId": "san-lucas-group",
+      "conversationId": null,
+      "text": "Saludos compañeros",
+      "senderUserId": "ranger-1",
+      "parkId": "1",
+      "sentAt": "2026-10-06T07:10:44.097Z",
+      "mock": true,
+      "id": "n4OUT04EU5M"
+    },
+    {
+      "kind": "group",
+      "channelId": "san-lucas-group",
+      "conversationId": null,
+      "text": "Saludos compañero",
+      "senderUserId": "admin-1",
+      "parkId": "1",
+      "sentAt": "2026-10-06T07:11:13.494Z",
+      "mock": true,
+      "id": "L-Is_2zY41g"
+    },
+    {
+      "kind": "group",
+      "channelId": "san-lucas-group",
+      "conversationId": null,
+      "text": "saludos",
+      "senderUserId": "master-1",
+      "parkId": "1",
+      "sentAt": "2026-10-06T07:12:04.755Z",
+      "mock": true,
+      "id": "CQbHiu8_wgw"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "guide-incident-1",
+      "parkId": "1",
+      "title": "Señal de sendero dañada · prueba",
+      "description": "Un guía reporta una señal dañada en un sector ficticio.",
+      "location": "Sector ficticio",
+      "status": "received",
+      "reportedByUserId": "guide-demo",
+      "reportedByName": "Guía de demostración",
+      "source": "guide",
+      "reportedAt": "2026-10-05T14:00:00Z",
+      "history": [],
+      "mock": true
+    }
+  ],
+  "chatChannels": [
+    {
+      "id": "san-lucas-group",
+      "parkId": "1",
+      "kind": "group",
+      "name": "Parque Nacional Isla San Lucas",
+      "active": true
+    }
+  ],
+  "chatChannelMembers": [
+    {
+      "channelId": "san-lucas-group",
+      "userId": "admin-1",
+      "parkId": "1",
+      "active": true,
+      "joinedAt": "2026-10-06T07:07:21.478Z",
+      "lastReadMessageId": "L-Is_2zY41g",
+      "id": "UtxD-drkyVU"
+    },
+    {
+      "channelId": "san-lucas-group",
+      "userId": "master-1",
+      "parkId": "1",
+      "active": true,
+      "joinedAt": "2026-10-06T07:08:32.529Z",
+      "lastReadMessageId": "CQbHiu8_wgw",
+      "id": "Fe86N8sEZ1o"
+    },
+    {
+      "channelId": "san-lucas-group",
+      "userId": "ranger-1",
+      "parkId": "1",
+      "active": true,
+      "joinedAt": "2026-10-06T07:10:04.968Z",
+      "lastReadMessageId": "L-Is_2zY41g",
+      "id": "xvasA_z0iCo"
+    }
+  ],
+  "directConversations": [],
+  "$schema": "./node_modules/json-server/schema.json",
+  "weatherForecasts": [
+    {
+      "id": "weather-san-lucas-mock",
+      "parkId": "1",
+      "source": "mock",
+      "fetchedAt": "2026-10-06T12:00:00Z",
+      "timezone": "America/Costa_Rica",
+      "observedAt": 1791288000,
+      "current": {
+        "temperature": 29,
+        "apparentTemperature": 31,
+        "relativeHumidity": 74,
+        "precipitation": 0,
+        "weatherCode": 2,
+        "cloudCover": 45,
+        "windSpeed": 12,
+        "windDirection": 180,
+        "windGusts": 20
+      },
+      "hourly": [
+        {
+          "time": 1791288000,
+          "temperature": 29,
+          "precipitationProbability": 70,
+          "precipitation": 2,
+          "weatherCode": 61,
+          "windSpeed": 12
+        }
+      ],
+      "daily": [
+        {
+          "time": 1791266400,
+          "temperatureMax": 31,
+          "temperatureMin": 24,
+          "precipitationProbability": 70,
+          "precipitation": 8,
+          "weatherCode": 61,
+          "windSpeed": 20
+        }
+      ]
+    }
+  ]
+}

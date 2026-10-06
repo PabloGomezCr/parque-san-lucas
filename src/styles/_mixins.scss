@@ -1,0 +1,17 @@
+@mixin card-base {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin focus-ring {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}

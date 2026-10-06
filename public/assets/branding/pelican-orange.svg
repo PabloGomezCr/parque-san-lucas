@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="currentColor" color="#D05E27">
+<!-- Geometric Pelican Silhouette -->
+<path d="M12 8C12 8 16 6 22 7C26 7.67 31 10.5 31 16C31 19.5 28.5 22 24 23.5L25 29C25 29 32 30 36 26C36 26 40 22 41 18C41 18 42 24 37 31C32.5 37.3 22 39 16 38C12 37.33 7 35 6 30C5 25 8 18 10 14L12 8Z" opacity="0.95"></path>
+<path color="#111729" d="M22 13C23.6569 13 25 11.6569 25 10C25 8.34315 23.6569 7 22 7C20.3431 7 19 8.34315 19 10C19 11.6569 20.3431 13 22 13Z" fill="currentColor"></path>
+<path d="M6 30C9 32 17 33 22 31C22 31 18 35 12 35C8 35 6 32 6 30Z" opacity="0.6"></path>
+<!-- Marine Wave Foundation -->
+<path d="M4 42C9 40 15 44 20 42C25 40 31 44 36 42C41 40 44 42 46 42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>

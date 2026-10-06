@@ -1,0 +1,15 @@
+export const incidentFactory = (overrides = {}) => ({
+  id: "guide-report-1",
+  parkId: "1",
+  title: "Reporte ficticio de guía",
+  description: "Descripción original del reporte.",
+  location: "Sector ficticio",
+  reportedByUserId: "guide-mock",
+  reportedByName: "Guía Ficticio",
+  source: "guide",
+  reportedAt: "2026-10-05T14:00:00Z",
+  status: "received",
+  history: [],
+  mock: true,
+  ...overrides,
+});

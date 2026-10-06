@@ -1,0 +1,7 @@
+{
+  "sourceSHA256": "c91087b33371c578d6fdd1f7dad722843b94211bf22d4b6f33de06f5889c8912",
+  "intersectionOverUnion": 0.9908318229010857,
+  "disagreementPixels": 1042,
+  "sourceForegroundPixels": 113346,
+  "method": "Blue > 140 silhouette comparison at native 1254×1254. Raster antialiasing and segmentation boundaries may differ."
+}

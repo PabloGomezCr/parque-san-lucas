@@ -1,0 +1,128 @@
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--text-primary);
+}
+.brand-logo__mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--logo-size, 44px);
+  height: var(--logo-size, 44px);
+  flex: 0 0 auto;
+  border-radius: 20%;
+  background: var(--brand-primary);
+}
+.brand-logo__symbol {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: contain;
+}
+.brand-logo--sm {
+  --logo-size: 32px;
+}
+.brand-logo--md {
+  --logo-size: 44px;
+}
+.brand-logo--lg {
+  --logo-size: 120px;
+}
+.brand-logo__background,
+.brand-logo__vector {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.brand-logo__vector {
+  overflow: visible;
+}
+.brand-logo__wing-left,
+.brand-logo__wing-right {
+  transform-box: view-box;
+}
+.brand-logo--animated .brand-logo__symbol {
+  opacity: 0;
+}
+.brand-logo--animated .brand-logo__vector {
+  animation: pelican-lift 1.1s ease-in-out infinite;
+}
+.brand-logo--animated .brand-logo__wing-left {
+  animation: pelican-wing-left 1.1s ease-in-out infinite;
+}
+.brand-logo--animated .brand-logo__wing-right {
+  animation: pelican-wing-right 1.1s ease-in-out infinite;
+}
+@keyframes pelican-wing-left {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-1.3deg);
+  }
+}
+@keyframes pelican-wing-right {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1.3deg);
+  }
+}
+@keyframes pelican-lift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 1024px) {
+  .brand-logo--lg {
+    --logo-size: 104px;
+  }
+}
+@media (max-width: 480px) {
+  .brand-logo--lg {
+    --logo-size: 88px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-logo--animated .brand-logo__vector,
+  .brand-logo--animated .brand-logo__wing-left,
+  .brand-logo--animated .brand-logo__wing-right {
+    animation: none;
+  }
+  .brand-logo--animated .brand-logo__symbol {
+    opacity: 1;
+  }
+}
+.brand-logo__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+.brand-logo__text strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+.brand-logo__text small {
+  font-size: 10px;
+  color: var(--text-secondary);
+}
+.brand-logo[data-logo-theme="dark"] {
+  color: var(--color-white);
+}
+.brand-logo[data-logo-theme="dark"] .brand-logo__text small {
+  color: var(--color-white);
+}
