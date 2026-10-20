@@ -27,3 +27,14 @@ playwright-report/
 test-results/
 
 coverage/
+
+# Local databases and backend secrets
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+backend/.venv/
+__pycache__/
+.pytest_cache/
